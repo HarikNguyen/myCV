@@ -1,0 +1,420 @@
+/* (desktop, pc, large screens) < extra large screen (Extra large screens, TV or laptop dell */
+@media (min-width: 48.0625em) and (max-width: 80.25em) {
+    /* base */
+    .btn{
+        font-size: 1.6rem;
+    }
+    /* cv-intro__info */
+    .cv-intro__info{
+        left: 0;
+        right: 0;
+        bottom: 16.8rem;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .cv-intro__info-btn-to-link{
+        justify-content: center;
+    }
+    /* header */
+    #menu-mobile{
+        display: none;
+    }
+    #menu-tablet{
+        display: none;
+    }
+    /* intro */
+    .cv-section__about-me-intro-say-hi{
+        letter-spacing: -0.08rem;
+    }
+    .cv-section__about-me-intro-description{
+        letter-spacing: -0.08rem;
+    }
+    .cv-section__about-me-intro{
+        padding: 0;
+    }
+    .cv-section__about-me-intro-download-resume{
+        margin-bottom: 1.2rem;
+    }
+    .cv-section__about-me-show-info-field{
+        margin: 1.2rem 0;
+    }
+    .cv-section__about-me-skill-table{
+        flex-direction: column;
+        width: auto;
+    }
+    /* timeline */
+    .cv-section__about-me-timeline-column__container{
+        width: 80%;
+    }
+    /* map */
+    .cv-section__contact-map-iframe{
+        height: 65vh;
+    }
+}
+
+/* tablet + small tablet + laptop */
+@media (max-width: 80.25em) {
+    .cv-section__about-me-skill-table{
+        flex-direction: row;
+    }
+    .cv-section__contact-map-iframe{
+        height: 65vh;
+    }
+}
+
+/* small Tablet */
+@media (min-width: 39.0625em) and (max-width: 60.5em) {
+    :root{
+        --nav-rail-width: 4.8rem;
+        --dark-mode-width: 110%;
+    }
+    /* base */
+    .btn{
+        font-size: 1.6rem;
+        padding: 1.6rem 2.4rem;
+    }
+    .avt-res{
+        margin-bottom: 2.4rem;
+    }
+    /* style */
+    .cv-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-tablet{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-tablet__icon{
+        padding: 1.6rem 0;
+        font-size: 3.2rem;
+        color: var(--primary-color);
+    }
+    #menu-tablet__icon:hover{
+        cursor: pointer;
+    }
+    .mobile-tablet__col{
+        margin-left: calc(-1*var(--nav-rail-width));
+    }
+    .cv-header__info{
+        display: none;
+    }
+    .cv-header__seperate{
+        display: none;
+    }
+    .cv-header__nav{
+        display: none;
+    }
+    .tablet__nav{
+        display: block;
+        margin: 0;
+    }
+    .cv-header__nav-list{
+        padding: 0;
+        margin: 0;
+    }
+    .cv-header__nav-list-item {
+        padding-bottom: 3.2rem;
+        justify-content: center;
+    }
+    .cv-header__nav-list-item-icon{
+        width: auto;
+        margin-right: 0;
+        font-size: 150%;
+    }
+    .cv-header__nav-hire-me{
+        display: none;
+    }
+    .cv-header__dark-mode-title{
+        display: none;
+    }
+    /* cv-intro__info */
+    .cv-intro__info{
+        left: 0;
+        right: 0;
+        bottom: 16.8rem;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .cv-intro__info-btn-to-link{
+        justify-content: center;
+    }
+    .cv-section__about-me-intro{
+        padding: 0 0 1.2rem;
+    }
+    .cv-section__about-me-timeline-column__container,
+    .box cv-section__contact-card-body{
+        width: 100%;
+    }
+    .cv-section__about-me-skill-table{
+        width: 100%;
+    }
+    .cv-section__about-me-list-skill-item{
+        width: 100%;
+    }
+    /* contact - card */
+    .cv-section__contact-card-icon {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    .cv-section__contact-card-content-social-list{
+        width: 13.6rem;
+    }
+    .cv-section__contact-card-content-social-icon{
+        font-size: 3.2rem;
+    }
+}
+
+/* mobile */
+@media (max-width: 39em) {
+    :root{
+        --nav-rail-width: 4.8rem;
+        --dark-mode-width: 5rem;
+        --avata-size: 14.4rem;
+    }
+    /* base */
+    .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1.6rem 0;
+        font-size: 1.6rem;
+    }
+    .avt-res{
+        margin-bottom: 2.4rem;
+    }
+
+    .showMenuMobile{
+        position: absolute;
+        width: 100%;
+        z-index: 10000000;
+        opacity: 0.8999;
+    }
+    .showMenuMobile .cv-header__info{
+        display: none;
+    }
+    .showMenuMobile .cv-header__nav{
+        display: flex;
+        margin: 7.2rem 0 0;
+
+    }
+    .showMenuMobile .cv-header__nav-list{
+        /* width: 100%; */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .showMenuMobile .cv-header__nav-list-item-link{
+        width: 100%;
+        justify-content: center;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+    .showMenuMobile .cv-header__nav-list-item-link:hover{
+        font-weight: 450;
+    }
+    .showMenuMobile .cv-header__nav-list-item-icon{
+        font-size: 3.2rem;
+        margin-right: 4rem
+    }
+    .showMenuMobile .cv-header__nav.tablet__nav{
+        display: none;
+    }
+    .showMenuMobile .cv-header__nav-hire-me{
+        display: flex;
+        width: 100%;
+    }
+    .showMenuMobile .cv-header__nav-hire-me-link{
+        width: 75%;
+    }
+    .showMenuMobile .cv-header__dark-mode{
+        display: flex;
+    }
+    .showMenuMobile .cv-header__dark-mode-title{
+        display: block;
+    }
+    .showMenuMobile .cv-header__dark-mode-check{
+
+    }
+    /* style */
+    .cv-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .mobile-tablet__col{
+        margin-left: calc(-1*var(--nav-rail-width));
+    }
+    .cv-header__info{
+        display: none;
+    }
+    .cv-header__seperate{
+        display: none;
+    }
+    .cv-header__nav{
+        display: none;
+    }
+    .tablet__nav{
+        display: none;
+        margin: 0;
+    }
+    .cv-header__nav-list{
+        padding: 0;
+        margin: 0;
+    }
+    .cv-header__dark-mode{
+        display: none;
+    }
+    .cv-header__nav-hire-me{
+        display: none;
+    }
+    .cv-header__dark-mode-title{
+        display: none;
+    }
+    /* menu */
+    #menu-mobile{
+        position: fixed;
+        left: 0.8rem;
+        top: 0.8rem;
+        z-index: 10000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color);
+        width: 5.6rem;
+        height: 5.6rem;
+        border-radius: 50%;
+    }
+    #menu-mobile__icon{
+        font-size: 2.4rem;
+        color: var(--primary-color);
+        width: 2.4rem;
+        margin: 0;
+        padding-left: 0.2rem;
+    }
+    /* cv-intro__info */
+    .cv-intro__info{
+        left: 0;
+        right: 0;
+        bottom: 12.8rem;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .cv-intro__info-say-hello{
+        font-size: 1.8rem;
+    }
+    .cv-intro__info-name{
+        font-size: 2.8rem;
+    }
+    .cv-intro__info-description{
+        line-height: 1.4;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+        margin-bottom: 1.4rem;
+    }
+    .cv-intro__info-btn-to-link{
+        justify-content: center;
+    }
+    /* info */
+    .cv-section__about-me-intro{
+        padding: 0 1.2rem 0 1.2rem;
+    }
+    .cv-section__about-me-timeline-column__container,
+    .box cv-section__contact-card-body{
+        width: 80%;
+    }
+    .cv-section__about-me-skill-table{
+        width: 100%;
+    }
+    .cv-section__about-me-list-skill-item{
+        width: 100%;
+    }
+    /* timeline */
+    .cv-section__about-me-timeline-column__box-details{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .cv-section__about-me-timeline-column__box-info-value{
+        margin: 1.2rem 0 0.6rem;
+    }
+    .cv-section__contact-card-content-to-email{
+        /* display: block; */
+    }
+    .cv-section__contact-mail-send{
+        margin-top: 1.2rem;
+    }
+    /* contact - card */
+    .cv-section__contact-card-icon{
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    .cv-section__contact-card-content-social-list{
+        width: 13.6rem;
+    }
+    .cv-section__contact-card-content-social-icon{
+        font-size: 3.2rem;
+    }
+    /* contact - form */
+    .cv-section__contact-mail-send{
+        flex-direction: column;
+    }
+    .cv-section__contact-mail-send-btn{
+        margin-right: 0;
+        margin-bottom: 1.2rem;
+    }
+    .cv-section__contact-mail-send-loading{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    /* map */
+    .cv-section__contact-map-iframe{
+        height: 55vh;
+    }
+}
+/* small mobile */
+@media (max-width: 26.5625em) {
+    /* base */
+    .domain{
+        display: block;
+    }
+    /* style */
+    .cv-intro__info-say-hello{
+        font-size: 1.6rem;
+    }
+    .cv-intro__info-name{
+        font-size: 1.8rem;
+    }
+    .cv-intro__info-description{
+        line-height: 1.4;
+        font-size: 1.2rem;
+    }
+    /* header */
+    .cv-section__title-content{
+        font-size: 3.2rem;
+    }
+    .cv-section__about-me-subtitle{
+        font-size: 2.8rem;
+    }
+    /* timeline */
+    .cv-section__about-me-timeline-column__box-details{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .cv-section__about-me-timeline-column__box-info-value{
+        margin: 1.2rem 0 0.6rem;
+    }
+    
+}

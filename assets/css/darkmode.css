@@ -1,0 +1,24 @@
+/* dark-mode */
+.dark-mode{
+    /* bg */
+    --header-bg-color: #2e3135 !important;
+    --background-color: #26282b !important;
+    /* text */
+    --text-color-emphasis: #fff;
+    --text-color: #b6b6b6;
+    --text-color-muted: #9b9b9b;
+    --header-text-color: #fff;
+    /* field - box */
+    --input-field-bg-color: #26282b;
+    --header-box-shadow-color: #606060b8;
+    --box-shadow-color: #424242;
+    --box-shadow-hover-color: #ffffff33;
+    --input-field-border-color: var(--box-shadow-color);
+    /* progress bar */
+    --progress-bar-color: #1a1c1f !important;
+    /* scrollbar color */
+    /*  -body - html */
+    --html-body-scrollbar-thumb-color: rgb(255 255 255 / 33%);
+    /* header */
+    --header-scrollbar-thumb-color: rgb(255 255 255 / 32%);
+}
